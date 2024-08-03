@@ -1,0 +1,84 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 320080 BAIXO GUANDU, 320350 MONTANHA
+Sexo: Masc
+Período:2020
+"Causa - CID-BR-10";"0 a 6 dias";"28 a 364 dias";"15 a 19 anos";"20 a 24 anos";"25 a 29 anos";"30 a 34 anos";"35 a 39 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"70 a 74 anos";"75 a 79 anos";"80 anos e mais";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";-;-;-;1;-;-;2;1;1;-;5;4;5;4;4;11;38
+". 005-006 Tuberculose";-;-;-;-;-;-;1;-;-;-;-;-;-;1;-;-;2
+"... 005 Tuberculose respiratória";-;-;-;-;-;-;1;-;-;-;-;-;-;1;-;-;2
+". 007-015 Outras doenças bacterianas";-;-;-;-;-;-;-;-;-;-;-;1;1;1;1;1;5
+"... 014 Septicemia";-;-;-;-;-;-;-;-;-;-;-;-;1;1;1;1;4
+". 016-023 Doenças virais";-;-;-;-;-;-;-;-;-;-;2;-;-;-;-;-;2
+"... 023 Doen p/vírus da imunodefic humana (HIV)";-;-;-;-;-;-;-;-;-;-;2;-;-;-;-;-;2
+". 031 Restante algumas doenç infec e parasitárias";-;-;-;1;-;-;1;1;1;-;3;3;4;2;3;10;29
+"032-052 NEOPLASIAS";-;-;-;-;-;-;-;1;1;2;3;5;6;6;2;8;34
+". 032 Neopl malig do lábio, cav oral e faringe";-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1
+". 033 Neoplasia maligna do esôfago";-;-;-;-;-;-;-;-;-;1;-;1;1;-;-;-;3
+". 034 Neoplasia maligna do estômago";-;-;-;-;-;-;-;-;-;-;-;1;1;-;1;3;6
+". 035 Neoplasia maligna do cólon,reto e ânus";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+". 036 Neopl malig do fígado e vias bil intrahepát";-;-;-;-;-;-;-;-;-;-;-;-;1;2;-;-;3
+". 038 Neoplasia maligna da laringe";-;-;-;-;-;-;-;-;-;-;1;-;1;-;-;1;3
+". 039 Neopl malig da traquéia,brônquios e pulmões";-;-;-;-;-;-;-;-;-;-;1;1;1;-;-;1;4
+". 045 Neoplasia maligna da próstata";-;-;-;-;-;-;-;-;-;-;-;-;-;2;1;-;3
+". 047 Neopl malig mening,encéf e out partes SNC";-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;1
+". 050 Leucemia";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+". 051 Neoplasias in situ, benig, comport incert";-;-;-;-;-;-;-;-;1;-;1;-;-;-;-;-;2
+". 052 Restante de neoplasias malignas";-;-;-;-;-;-;-;1;-;-;-;1;1;-;-;3;6
+"053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT";-;-;-;-;-;-;-;-;-;-;-;-;2;-;-;1;3
+". 053 Anemias";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;2
+". 054 Rest d sangue, org hemat e alg transt imunit";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;-;-;-;-;-;1;1;1;3;2;-;-;-;5;13
+". 055 Diabetes mellitus";-;-;-;-;-;-;-;1;1;1;3;2;-;-;-;3;11
+". 056 Desnutrição";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 057 Rest doenças endócr, nutricion e metabólicas";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+"060-063 DOENÇAS DO SISTEMA NERVOSO";-;-;1;-;-;1;-;-;-;-;1;2;-;-;3;3;11
+". 061 Doença de Alzheimer";-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;3;5
+". 062 Epilepsia";-;-;1;-;-;-;-;-;-;-;-;1;-;-;-;-;2
+". 063 Restante das doenças do sistema nervoso";-;-;-;-;-;1;-;-;-;-;1;1;-;-;1;-;4
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;-;-;-;-;-;1;3;9;-;5;8;10;10;26;72
+". 066 Febre reumát aguda e doen reum crôn coração";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+". 067 Doenças hipertensivas";-;-;-;-;-;-;-;1;-;2;-;1;3;4;3;7;21
+". 068 Doenças isquêmicas do coração";-;-;-;-;-;-;-;-;1;2;-;2;5;3;2;7;22
+"... 068.1 Infarto agudo do miocárdio";-;-;-;-;-;-;-;-;1;2;-;2;5;2;1;7;20
+". 069 Outras doenças cardíacas";-;-;-;-;-;-;-;-;2;2;-;-;-;2;2;3;11
+". 070 Doenças cerebrovasculares";-;-;-;-;-;-;-;-;-;3;-;2;-;-;1;9;15
+". 072 Rest doenças do aparelho circulatório";-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;-;2
+"073-077 DOENÇAS DO APARELHO RESPIRATÓRIO";-;-;-;1;-;-;-;-;-;2;1;2;2;2;5;6;21
+". 074 Pneumonia";-;-;-;-;-;-;-;-;-;1;-;-;1;1;2;5;10
+". 075 Out infec agudas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+"... 075.1 Bronquiolite";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 076 Doenças crônicas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;-;1;2;-;1;3;1;8
+"... 076.1 Asma";-;-;-;-;-;-;-;-;-;-;1;1;-;-;-;-;2
+". 077 Restante  doenças do aparelho respiratório";-;-;-;1;-;-;-;-;-;1;-;-;-;-;-;-;2
+"078-082 DOENÇAS DO APARELHO DIGESTIVO";-;-;-;-;-;1;4;-;2;1;3;1;1;2;-;5;20
+". 080 Doenças do fígado";-;-;-;-;-;-;4;-;2;1;2;-;1;1;-;2;13
+"... 080.1 Doença alcoólica do fígado";-;-;-;-;-;-;2;-;1;-;2;-;1;-;-;-;6
+"... 080.2 Fibrose e cirrose do fígado";-;-;-;-;-;-;2;-;1;1;-;-;-;1;-;2;7
+". 082 Rest doenças do aparelho digestivo";-;-;-;-;-;1;-;-;-;-;1;1;-;1;-;3;7
+"083 DOENÇAS DA PELE E TECIDO SUBCUTÂNEO";-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;1
+"085-087 DOENÇAS DO APARELHO GENITURINÁRIO";-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;-;2
+". 087 Rest doenças do aparelho geniturinário";-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;-;2
+"093-097 ALG AFECÇÕES ORIGIN NO PERÍODO PERINATAL";1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+". 096 Trans resp e cardiovas espec per perinatal";1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+"101-103 SINT, SIN E ACH ANORM CLÍN E LAB, NCOP";-;1;-;-;-;-;-;1;-;-;1;-;1;1;-;1;6
+". 101 Senilidade";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 103 Rest sint, sin e ach anorm clín e laborat";-;1;-;-;-;-;-;1;-;-;1;-;1;1;-;-;5
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";-;-;7;5;3;5;3;11;4;4;2;2;1;4;-;3;54
+". 104 Acidentes de transporte";-;-;-;2;-;3;-;2;2;2;-;1;-;-;-;-;12
+". 105 Quedas";-;-;-;-;-;-;-;-;-;-;-;1;1;1;-;2;5
+". 106 Afogamento e submersões acidentais";-;-;-;1;1;-;1;2;-;1;-;-;-;-;-;-;6
+". 109 Lesões autoprovocadas voluntariamente";-;-;1;-;-;-;-;2;-;-;-;-;-;1;-;-;4
+". 110 Agressões";-;-;6;2;1;2;2;5;2;1;1;-;-;-;-;-;22
+". 111 Eventos(fatos) cuja intenção é indeterminada";-;-;-;-;-;-;-;-;-;-;1;-;-;1;-;-;2
+". 113 Todas as outras causas externas";-;-;-;-;1;-;-;-;-;-;-;-;-;1;-;1;3
+"Total";1;1;8;7;3;7;9;16;12;20;19;23;26;29;26;69;276
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

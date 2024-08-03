@@ -1,0 +1,33 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 260740 ITACURUBA
+Sexo: Masc
+Período:2021
+"Causa - CID-BR-10";"20 a 24 anos";"25 a 29 anos";"35 a 39 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"70 a 74 anos";"75 a 79 anos";"80 anos e mais";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";-;-;-;1;-;1;-;-;-;-;1;3
+". 031 Restante algumas doenç infec e parasitárias";-;-;-;1;-;1;-;-;-;-;1;3
+"032-052 NEOPLASIAS";-;-;1;-;-;-;-;-;-;-;-;1
+". 052 Restante de neoplasias malignas";-;-;1;-;-;-;-;-;-;-;-;1
+"053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT";-;-;-;-;-;-;-;-;-;-;1;1
+". 053 Anemias";-;-;-;-;-;-;-;-;-;-;1;1
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;-;-;-;1;-;1;1;-;-;3
+". 055 Diabetes mellitus";-;-;-;-;-;-;-;1;-;-;-;1
+". 057 Rest doenças endócr, nutricion e metabólicas";-;-;-;-;-;1;-;-;1;-;-;2
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;-;-;1;-;1;-;-;2;-;4
+". 067 Doenças hipertensivas";-;-;-;-;-;-;-;-;-;1;-;1
+". 068 Doenças isquêmicas do coração";-;-;-;-;1;-;1;-;-;-;-;2
+"... 068.1 Infarto agudo do miocárdio";-;-;-;-;1;-;1;-;-;-;-;2
+". 070 Doenças cerebrovasculares";-;-;-;-;-;-;-;-;-;1;-;1
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";1;1;-;-;-;1;-;1;-;-;-;4
+". 104 Acidentes de transporte";-;-;-;-;-;1;-;1;-;-;-;2
+". 109 Lesões autoprovocadas voluntariamente";1;1;-;-;-;-;-;-;-;-;-;2
+"Total";1;1;1;1;1;3;1;2;1;2;2;16
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

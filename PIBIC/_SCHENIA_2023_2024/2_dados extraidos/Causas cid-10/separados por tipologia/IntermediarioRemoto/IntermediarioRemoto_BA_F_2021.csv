@@ -1,0 +1,60 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 291320 IBOTIRAMA
+Sexo: Fem
+Período:2021
+"Causa - CID-BR-10";"0 a 6 dias";"10 a 14 anos";"20 a 24 anos";"25 a 29 anos";"30 a 34 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"70 a 74 anos";"75 a 79 anos";"80 anos e mais";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";-;-;-;-;1;1;1;2;1;1;-;2;3;6;18
+". 007-015 Outras doenças bacterianas";-;-;-;-;-;-;-;-;-;1;-;-;-;2;3
+"... 014 Septicemia";-;-;-;-;-;-;-;-;-;1;-;-;-;2;3
+". 024-027 Doenças transmitidas por protozoários";-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+"... 026 Doença de Chagas";-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+". 031 Restante algumas doenç infec e parasitárias";-;-;-;-;1;1;1;2;1;-;-;1;3;4;14
+"032-052 NEOPLASIAS";-;-;-;-;-;-;-;2;-;2;1;-;-;2;7
+". 034 Neoplasia maligna do estômago";-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 035 Neoplasia maligna do cólon,reto e ânus";-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 042 Neoplasia maligna do colo do útero";-;-;-;-;-;-;-;1;-;-;-;-;-;-;1
+". 052 Restante de neoplasias malignas";-;-;-;-;-;-;-;1;-;2;-;-;-;1;4
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;-;-;-;-;-;-;1;-;1;1;-;2;5
+". 055 Diabetes mellitus";-;-;-;-;-;-;-;-;1;-;1;1;-;2;5
+"058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS";-;-;-;-;-;-;-;2;-;-;-;-;-;-;2
+". 058 Transt ment e comport uso subst psicoativas";-;-;-;-;-;-;-;2;-;-;-;-;-;-;2
+"... 058.1 Trans ment e comport devid uso álcool";-;-;-;-;-;-;-;2;-;-;-;-;-;-;2
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;-;-;-;1;-;-;-;3;2;2;2;8;18
+". 067 Doenças hipertensivas";-;-;-;-;-;-;-;-;-;-;-;-;-;3;3
+". 068 Doenças isquêmicas do coração";-;-;-;-;-;-;-;-;-;1;-;1;1;-;3
+"... 068.1 Infarto agudo do miocárdio";-;-;-;-;-;-;-;-;-;1;-;1;-;-;2
+". 069 Outras doenças cardíacas";-;-;-;-;-;1;-;-;-;2;-;1;-;2;6
+". 070 Doenças cerebrovasculares";-;-;-;-;-;-;-;-;-;-;2;-;1;3;6
+"073-077 DOENÇAS DO APARELHO RESPIRATÓRIO";-;-;-;1;-;-;-;-;-;-;-;2;-;4;7
+". 074 Pneumonia";-;-;-;-;-;-;-;-;-;-;-;2;-;-;2
+". 076 Doenças crônicas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+"... 076.1 Asma";-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 077 Restante  doenças do aparelho respiratório";-;-;-;1;-;-;-;-;-;-;-;-;-;3;4
+"078-082 DOENÇAS DO APARELHO DIGESTIVO";-;1;-;-;-;-;-;-;-;1;1;-;-;-;3
+". 080 Doenças do fígado";-;1;-;-;-;-;-;-;-;1;1;-;-;-;3
+"... 080.2 Fibrose e cirrose do fígado";-;-;-;-;-;-;-;-;-;1;1;-;-;-;2
+"... 080.3 Outras doenças do fígado";-;1;-;-;-;-;-;-;-;-;-;-;-;-;1
+"084 DOENÇAS SIST OSTEOMUSC E TECIDO CONJUNTIVO";-;-;-;1;-;-;-;-;-;-;-;-;-;-;1
+"085-087 DOENÇAS DO APARELHO GENITURINÁRIO";-;-;-;-;1;-;-;-;-;-;-;-;-;1;2
+". 086 Insuficiência renal";-;-;-;-;1;-;-;-;-;-;-;-;-;1;2
+"088-092 GRAVIDEZ, PARTO E PUERPÉRIO";-;-;-;1;-;-;-;-;-;-;-;-;-;-;1
+". 090 Causas obstétricas indiretas";-;-;-;1;-;-;-;-;-;-;-;-;-;-;1
+"093-097 ALG AFECÇÕES ORIGIN NO PERÍODO PERINATAL";1;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+". 097 Rest afec originadas no período perinatal";1;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+"098-100 MALF CONGÊN, DEFORM E ANOMAL CROMOSSÔMICAS";-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 100 Rest de malf cong, deform e anomal Cromoss";-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+"101-103 SINT, SIN E ACH ANORM CLÍN E LAB, NCOP";-;-;1;-;-;-;-;-;-;1;-;1;3;4;10
+". 103 Rest sint, sin e ach anorm clín e laborat";-;-;1;-;-;-;-;-;-;1;-;1;3;4;10
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 113 Todas as outras causas externas";-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+"Total";1;1;1;3;2;2;1;6;2;8;6;8;8;28;77
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

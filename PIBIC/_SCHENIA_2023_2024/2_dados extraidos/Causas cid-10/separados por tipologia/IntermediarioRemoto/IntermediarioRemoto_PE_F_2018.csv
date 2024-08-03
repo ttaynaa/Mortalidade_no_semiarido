@@ -1,0 +1,29 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 260740 ITACURUBA
+Sexo: Fem
+Período:2018
+"Causa - CID-BR-10";"1 a 4 anos";"55 a 59 anos";"75 a 79 anos";"80 anos e mais";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";1;-;-;-;1
+". 007-015 Outras doenças bacterianas";1;-;-;-;1
+"... 014 Septicemia";1;-;-;-;1
+"032-052 NEOPLASIAS";-;-;1;-;1
+". 040 Neoplasia maligna da pele";-;-;1;-;1
+"058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS";-;-;-;1;1
+". 058 Transt ment e comport uso subst psicoativas";-;-;-;1;1
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;-;4;4
+". 067 Doenças hipertensivas";-;-;-;2;2
+". 068 Doenças isquêmicas do coração";-;-;-;1;1
+". 069 Outras doenças cardíacas";-;-;-;1;1
+"073-077 DOENÇAS DO APARELHO RESPIRATÓRIO";-;1;-;-;1
+". 076 Doenças crônicas das vias aéreas inferiores";-;1;-;-;1
+"Total";1;1;1;5;8
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

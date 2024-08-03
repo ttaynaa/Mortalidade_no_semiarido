@@ -1,0 +1,38 @@
+Esta pasta foi utilizada para calcula as morte por trienio.
+
+pontos importantes: 
+- 1 morte para as três anos = 0,333..  isso não pode ser omitido pois ouve uma
+morte, dessa forma sempre arredondamos para mais, assim essa ficou com 1 morte.
+
+- Quando junta os três anos, temo um problema de de aquela causa ser atribuida no final do banco. exemplo:
+_______________________________________________________________________
+Arquivo com ano 2017 	|Arquivo com ano 2019	|Arquivo com ano 2019
+-----------------------------------------------------------------------
+causa 1			|causa 1 		|causa 1
+causa 3			|causa 2		|causa 2
+_______________________________________________________________________
+
+
+a estrutura fica assim:
+_______________________
+trienio para 2018	
+-----------------------
+causa 1			
+causa 3	
+causa 2		
+________________________
+
+Essa estrutura é muito complicada para fazer as ditribuições das causas mal definidas, dessa forma corrigir os código para ficar assim?:
+
+_______________________
+trienio para 2018	
+-----------------------
+causa 1			
+causa 2	
+causa 3	
+________________________
+
+
+- Lembrando que cada script vai ter todas as informações por Estado. vai amazenar os dados de um estados em unico excel.
+
+- Cada aba do excel é refente a um trienio (2018 ou 2021), separado por tipologia e por sexo. 

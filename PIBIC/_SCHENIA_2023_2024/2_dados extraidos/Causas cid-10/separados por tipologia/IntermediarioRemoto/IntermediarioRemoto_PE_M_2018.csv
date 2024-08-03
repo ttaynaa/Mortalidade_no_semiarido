@@ -1,0 +1,31 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 260740 ITACURUBA
+Sexo: Masc
+Período:2018
+"Causa - CID-BR-10";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"70 a 74 anos";"80 anos e mais";"Total"
+"032-052 NEOPLASIAS";-;-;1;1;-;1;3
+". 039 Neopl malig da traquéia,brônquios e pulmões";-;-;1;1;-;-;2
+". 052 Restante de neoplasias malignas";-;-;-;-;-;1;1
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;-;-;1;-;1
+". 055 Diabetes mellitus";-;-;-;-;1;-;1
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";1;3;1;-;1;2;8
+". 067 Doenças hipertensivas";1;-;-;-;-;-;1
+". 068 Doenças isquêmicas do coração";-;2;1;-;-;1;4
+"... 068.1 Infarto agudo do miocárdio";-;1;1;-;-;1;3
+". 069 Outras doenças cardíacas";-;1;-;-;-;-;1
+". 070 Doenças cerebrovasculares";-;-;-;-;1;1;2
+"085-087 DOENÇAS DO APARELHO GENITURINÁRIO";-;-;-;-;-;1;1
+". 087 Rest doenças do aparelho geniturinário";-;-;-;-;-;1;1
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";-;1;-;-;-;-;1
+". 110 Agressões";-;1;-;-;-;-;1
+"Total";1;4;2;1;2;4;14
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

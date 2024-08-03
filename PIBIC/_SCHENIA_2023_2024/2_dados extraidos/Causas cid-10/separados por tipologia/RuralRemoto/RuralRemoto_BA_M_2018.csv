@@ -1,0 +1,119 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 290010 ABAIRA, 290020 ABARE, 290270 BARRA, 290400 BONINAL, 290410 BOQUIRA, 290450 BROTAS DE MACAUBAS, 290475 BURITIRAMA, 290755 CATURAMA, 290770 CHORROCHO, 290810 COCOS, 290910 CORIBE, 291077 FEIRA DA MATA, 291250 IBIPITANGA, 291300 IBITIARA, 291410 IPUPIARA, 291980 MACAUBAS, 291990 MACURURE, 292045 MANSIDAO, 292160 MORPARA, 292303 NOVO HORIZONTE, 292320 OLIVEIRA DOS BREJINHOS, 292430 PIATA, 292440 PILAO ARCADO, 292690 RIO DO PIRES
+Sexo: Masc
+Período:2018
+"Causa - CID-BR-10";"0 a 6 dias";"7 a 27 dias";"28 a 364 dias";"1 a 4 anos";"5 a 9 anos";"10 a 14 anos";"15 a 19 anos";"20 a 24 anos";"25 a 29 anos";"30 a 34 anos";"35 a 39 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"70 a 74 anos";"75 a 79 anos";"80 anos e mais";"Idade ignorada";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";-;-;2;1;-;-;2;-;1;2;2;-;4;2;5;2;4;3;4;15;-;49
+". 001 Doenças infecciosas intestinais";-;-;1;-;-;-;1;-;-;1;-;-;-;-;1;-;-;-;-;2;-;6
+"... 003 Diarréia e gastroenterite orig infec pres";-;-;-;-;-;-;-;-;-;1;-;-;-;-;1;-;-;-;-;1;-;3
+"... 004 Outras doenças infecciosas intestinais";-;-;1;-;-;-;1;-;-;-;-;-;-;-;-;-;-;-;-;1;-;3
+". 005-006 Tuberculose";-;-;-;-;-;-;-;-;1;-;-;-;-;-;1;1;1;-;-;1;-;5
+"... 005 Tuberculose respiratória";-;-;-;-;-;-;-;-;1;-;-;-;-;-;1;1;1;-;-;1;-;5
+". 007-015 Outras doenças bacterianas";-;-;1;-;-;-;1;-;-;1;1;-;-;1;-;1;2;1;2;11;-;22
+"... 014 Septicemia";-;-;1;-;-;-;1;-;-;1;1;-;-;1;-;1;2;1;1;10;-;20
+". 016-023 Doenças virais";-;-;-;-;-;-;-;-;-;-;1;-;-;-;2;-;-;-;-;-;-;3
+"... 022 Hepatite viral";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;1
+"... 023 Doen p/vírus da imunodefic humana (HIV)";-;-;-;-;-;-;-;-;-;-;1;-;-;-;1;-;-;-;-;-;-;2
+". 024-027 Doenças transmitidas por protozoários";-;-;-;1;-;-;-;-;-;-;-;-;2;1;1;-;-;2;1;-;-;8
+"... 025 Leishmaniose";-;-;-;1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+"... 026 Doença de Chagas";-;-;-;-;-;-;-;-;-;-;-;-;2;1;1;-;-;2;1;-;-;7
+". 028-030 Helmintíases";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;1;-;-;2
+"... 028 Esquistossomose";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1
+"... 029 Cisticercose";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+". 031 Restante algumas doenç infec e parasitárias";-;-;-;-;-;-;-;-;-;-;-;-;2;-;-;-;-;-;-;1;-;3
+"032-052 NEOPLASIAS";-;-;-;1;-;-;-;1;1;1;4;1;7;14;18;15;20;24;20;58;-;185
+". 032 Neopl malig do lábio, cav oral e faringe";-;-;-;-;-;-;-;-;-;-;-;-;-;5;-;2;3;-;2;1;-;13
+". 033 Neoplasia maligna do esôfago";-;-;-;-;-;-;-;-;-;-;2;1;1;2;2;2;-;4;-;1;-;15
+". 034 Neoplasia maligna do estômago";-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;2;-;1;1;-;5
+". 035 Neoplasia maligna do cólon,reto e ânus";-;-;-;-;-;-;-;-;-;1;-;-;-;-;1;-;1;1;-;3;-;7
+". 036 Neopl malig do fígado e vias bil intrahepát";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;2;-;2;-;6
+". 037 Neoplasia maligna do pâncreas";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;2;-;-;3
+". 038 Neoplasia maligna da laringe";-;-;-;-;-;-;-;-;-;-;-;-;1;1;3;1;-;1;1;1;-;9
+". 039 Neopl malig da traquéia,brônquios e pulmões";-;-;-;-;-;-;-;-;-;-;-;-;1;-;1;3;2;3;3;7;-;20
+". 040 Neoplasia maligna da pele";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;1
+". 041 Neoplasia maligna da mama";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;1
+". 045 Neoplasia maligna da próstata";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;4;4;5;7;24;-;45
+". 046 Neoplasia maligna da bexiga";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;3;1;1;-;5
+". 047 Neopl malig mening,encéf e out partes SNC";-;-;-;-;-;-;-;-;1;-;-;-;2;1;2;1;1;2;-;2;-;12
+". 049 Mieloma mult e neopl malig de plasmócitos";-;-;-;-;-;-;-;-;-;-;-;-;1;-;2;-;-;-;-;-;-;3
+". 050 Leucemia";-;-;-;1;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;2;-;4
+". 051 Neoplasias in situ, benig, comport incert";-;-;-;-;-;-;-;1;-;-;1;-;-;-;1;1;-;-;1;1;-;6
+". 052 Restante de neoplasias malignas";-;-;-;-;-;-;-;-;-;-;-;-;1;3;4;1;5;3;2;11;-;30
+"053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT";-;-;-;1;-;-;-;1;-;-;1;-;1;-;2;-;-;2;2;4;-;14
+". 053 Anemias";-;-;-;1;-;-;-;1;-;-;1;-;1;-;1;-;-;2;2;3;-;12
+". 054 Rest d sangue, org hemat e alg transt imunit";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1;-;2
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;2;-;-;-;-;1;-;2;1;1;1;4;10;6;7;8;3;32;-;78
+". 055 Diabetes mellitus";-;-;1;-;-;-;-;1;-;1;-;1;1;3;7;3;5;6;3;11;-;43
+". 056 Desnutrição";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;1;1;1;-;13;-;17
+". 057 Rest doenças endócr, nutricion e metabólicas";-;-;1;-;-;-;-;-;-;1;1;-;-;-;3;2;1;1;-;8;-;18
+"058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS";-;-;-;-;-;-;-;-;1;3;7;3;2;7;1;2;3;1;-;1;-;31
+". 058 Transt ment e comport uso subst psicoativas";-;-;-;-;-;-;-;-;1;3;7;3;-;7;-;2;3;1;-;1;-;28
+"... 058.1 Trans ment e comport devid uso álcool";-;-;-;-;-;-;-;-;1;3;7;3;-;7;-;2;3;-;-;1;-;27
+". 059 Rest transtornos mentais e comportamentais";-;-;-;-;-;-;-;-;-;-;-;-;2;-;1;-;-;-;-;-;-;3
+"060-063 DOENÇAS DO SISTEMA NERVOSO";-;-;1;1;2;-;1;-;2;-;3;-;-;-;-;1;-;4;5;11;-;31
+". 061 Doença de Alzheimer";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;4;10;-;15
+". 062 Epilepsia";-;-;-;-;1;-;-;-;-;-;2;-;-;-;-;1;-;-;-;1;-;5
+". 063 Restante das doenças do sistema nervoso";-;-;1;1;1;-;1;-;2;-;1;-;-;-;-;-;-;3;1;-;-;11
+"065 DOENÇAS DO OUVIDO E DA APÓFISE MASTÓIDE";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;1;-;-;-;-;1;1;4;2;12;16;16;28;40;41;50;55;124;-;391
+". 066 Febre reumát aguda e doen reum crôn coração";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;1;-;3
+". 067 Doenças hipertensivas";-;-;-;-;-;-;-;-;-;1;-;-;3;1;3;1;6;8;4;27;-;54
+". 068 Doenças isquêmicas do coração";-;-;-;-;-;-;-;-;-;1;1;5;7;9;11;15;20;14;18;39;-;140
+"... 068.1 Infarto agudo do miocárdio";-;-;-;-;-;-;-;-;-;1;1;5;7;8;11;14;19;14;18;38;-;136
+". 069 Outras doenças cardíacas";-;-;1;-;-;-;-;1;1;-;-;3;3;1;6;7;6;6;10;21;-;66
+". 070 Doenças cerebrovasculares";-;-;-;-;-;-;-;-;-;2;1;4;2;4;6;17;9;20;21;33;-;119
+". 072 Rest doenças do aparelho circulatório";-;-;-;-;-;-;-;-;-;-;-;-;1;1;2;-;-;2;-;3;-;9
+"073-077 DOENÇAS DO APARELHO RESPIRATÓRIO";-;-;2;1;2;-;-;-;2;1;1;3;2;8;4;3;10;12;13;66;-;130
+". 073 Influenza (gripe)";-;-;1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+". 074 Pneumonia";-;-;1;1;-;-;-;-;1;-;1;1;1;2;1;2;2;7;5;31;-;56
+". 075 Out infec agudas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;-;1
+". 076 Doenças crônicas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;1;-;-;-;2;-;-;6;2;6;21;-;38
+"... 076.1 Asma";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;-;-;3;-;5
+". 077 Restante  doenças do aparelho respiratório";-;-;-;-;2;-;-;-;1;-;-;2;1;3;3;1;2;3;2;14;-;34
+"078-082 DOENÇAS DO APARELHO DIGESTIVO";-;-;-;1;1;-;1;1;1;3;7;9;8;5;5;6;5;4;3;13;-;73
+". 078 Úlcera gástrica, duodenal e péptica";-;-;-;-;-;-;-;1;-;-;-;-;1;-;-;-;-;-;-;1;-;3
+". 079 Peritonite";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;-;1
+". 080 Doenças do fígado";-;-;-;-;-;-;-;-;1;1;5;6;6;2;4;3;4;-;-;1;-;33
+"... 080.1 Doença alcoólica do fígado";-;-;-;-;-;-;-;-;1;1;5;5;2;2;4;3;4;-;-;1;-;28
+"... 080.2 Fibrose e cirrose do fígado";-;-;-;-;-;-;-;-;-;-;-;-;2;-;-;-;-;-;-;-;-;2
+"... 080.3 Outras doenças do fígado";-;-;-;-;-;-;-;-;-;-;-;1;2;-;-;-;-;-;-;-;-;3
+". 081 Colecistite";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;-;-;-;1
+". 082 Rest doenças do aparelho digestivo";-;-;-;1;1;-;1;-;-;2;2;3;-;2;1;3;1;4;3;11;-;35
+"083 DOENÇAS DA PELE E TECIDO SUBCUTÂNEO";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;-;1;-;4;-;7
+"084 DOENÇAS SIST OSTEOMUSC E TECIDO CONJUNTIVO";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;-;2;-;3
+"085-087 DOENÇAS DO APARELHO GENITURINÁRIO";-;-;-;1;-;-;1;-;-;1;1;2;-;-;2;2;5;5;1;13;-;34
+". 085 D glomerulares e d renais túbulo-interstic";-;-;-;1;-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;2;-;4
+". 086 Insuficiência renal";-;-;-;-;-;-;1;-;-;1;1;2;-;-;1;2;2;4;1;9;-;24
+". 087 Rest doenças do aparelho geniturinário";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;2;1;-;2;-;6
+"093-097 ALG AFECÇÕES ORIGIN NO PERÍODO PERINATAL";32;4;3;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;39
+". 093 Feto e recemnasc afet fat mat e compl grav";6;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;6
+". 094 Transt relac duração gestação e cresc fetal";4;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;4
+". 096 Trans resp e cardiovas espec per perinatal";13;1;2;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;16
+". 097 Rest afec originadas no período perinatal";9;3;1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;13
+"098-100 MALF CONGÊN, DEFORM E ANOMAL CROMOSSÔMICAS";4;-;5;-;-;1;-;-;-;1;-;-;-;1;-;-;-;-;-;-;-;12
+". 099 Malf congênitas do aparelho circulatório";-;-;2;-;-;1;-;-;-;-;-;-;-;1;-;-;-;-;-;-;-;4
+". 100 Rest de malf cong, deform e anomal Cromoss";4;-;3;-;-;-;-;-;-;1;-;-;-;-;-;-;-;-;-;-;-;8
+"101-103 SINT, SIN E ACH ANORM CLÍN E LAB, NCOP";-;-;1;1;2;2;3;2;1;4;6;8;4;7;5;10;10;16;10;42;1;135
+". 101 Senilidade";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;7;-;7
+". 102 Morte sem assistência médica";-;-;-;-;-;1;-;-;-;-;1;3;2;1;3;2;6;12;7;23;1;62
+". 103 Rest sint, sin e ach anorm clín e laborat";-;-;1;1;2;1;3;2;1;4;5;5;2;6;2;8;4;4;3;12;-;66
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";-;-;-;4;2;3;11;25;21;17;15;12;12;12;13;8;6;7;1;16;1;186
+". 104 Acidentes de transporte";-;-;-;-;-;3;5;11;7;8;2;4;4;2;7;3;2;2;1;-;-;61
+". 105 Quedas";-;-;-;-;-;-;-;-;-;-;1;-;-;-;2;1;-;2;-;7;-;13
+". 106 Afogamento e submersões acidentais";-;-;-;2;1;-;2;-;2;-;1;-;-;1;-;-;-;-;-;1;-;10
+". 109 Lesões autoprovocadas voluntariamente";-;-;-;-;-;-;-;5;3;2;3;1;2;2;1;-;2;1;-;2;-;24
+". 110 Agressões";-;-;-;-;1;-;3;5;3;5;5;4;4;2;1;4;-;1;-;1;1;40
+". 111 Eventos(fatos) cuja intenção é indeterminada";-;-;-;-;-;-;-;-;2;1;2;2;-;1;-;-;1;1;-;1;-;11
+". 112 Intervenções legais e operações de guerra";-;-;-;-;-;-;-;1;1;-;-;-;-;-;-;-;-;-;-;-;-;2
+". 113 Todas as outras causas externas";-;-;-;2;-;-;1;3;3;1;1;1;2;4;2;-;1;-;-;4;-;25
+"Total";36;4;17;12;9;6;19;32;31;39;50;51;58;77;93;96;111;137;118;401;2;1399
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 

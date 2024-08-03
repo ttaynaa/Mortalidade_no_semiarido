@@ -1,0 +1,81 @@
+ Mortalidade - Brasil
+Óbitos p/Residênc por Causa - CID-BR-10 e Faixa Etária det
+Município: 320210 ECOPORANGA, 320270 ITAGUACU, 320290 ITARANA, 320330 MANTENOPOLIS
+Sexo: Fem
+Período:2021
+"Causa - CID-BR-10";"0 a 6 dias";"28 a 364 dias";"5 a 9 anos";"15 a 19 anos";"25 a 29 anos";"30 a 34 anos";"35 a 39 anos";"40 a 44 anos";"45 a 49 anos";"50 a 54 anos";"55 a 59 anos";"60 a 64 anos";"65 a 69 anos";"70 a 74 anos";"75 a 79 anos";"80 anos e mais";"Total"
+"001-031 ALGUMAS DOENÇAS INFECCIOSAS E PARASITÁRIAS";-;-;-;1;-;-;-;2;1;-;3;5;4;7;7;15;45
+". 007-015 Outras doenças bacterianas";-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;1;3
+"... 014 Septicemia";-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;-;2
+". 031 Restante algumas doenç infec e parasitárias";-;-;-;1;-;-;-;2;1;-;3;4;4;7;6;14;42
+"032-052 NEOPLASIAS";-;-;-;-;1;-;-;3;4;1;6;4;4;3;1;5;32
+". 032 Neopl malig do lábio, cav oral e faringe";-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1
+". 034 Neoplasia maligna do estômago";-;-;-;-;-;-;-;1;-;-;-;-;-;-;-;-;1
+". 035 Neoplasia maligna do cólon,reto e ânus";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;1;2
+". 036 Neopl malig do fígado e vias bil intrahepát";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 037 Neoplasia maligna do pâncreas";-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1
+". 038 Neoplasia maligna da laringe";-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;1
+". 039 Neopl malig da traquéia,brônquios e pulmões";-;-;-;-;-;-;-;-;-;-;2;-;-;-;-;-;2
+". 041 Neoplasia maligna da mama";-;-;-;-;-;-;-;-;-;1;1;1;-;2;-;-;5
+". 042 Neoplasia maligna do colo do útero";-;-;-;-;-;-;-;-;3;-;-;-;-;1;-;-;4
+". 043 Neopl malig de corpo e partes n/esp útero";-;-;-;-;-;-;-;-;-;-;-;-;1;-;1;-;2
+". 044 Neoplasia maligna do ovário";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 046 Neoplasia maligna da bexiga";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 050 Leucemia";-;-;-;-;-;-;-;1;-;-;1;-;-;-;-;-;2
+". 052 Restante de neoplasias malignas";-;-;-;-;1;-;-;1;1;-;2;-;1;-;-;2;8
+"053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 053 Anemias";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+"055-057 D ENDÓCRINAS, NUTRICIONAIS E METABÓLICAS";-;-;-;-;-;-;-;-;-;1;1;-;2;1;9;7;21
+". 055 Diabetes mellitus";-;-;-;-;-;-;-;-;-;1;1;-;2;1;7;4;16
+". 056 Desnutrição";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;2;3
+". 057 Rest doenças endócr, nutricion e metabólicas";-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1;2
+"058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS";-;-;-;-;-;-;-;-;-;1;1;-;-;-;-;-;2
+". 058 Transt ment e comport uso subst psicoativas";-;-;-;-;-;-;-;-;-;1;1;-;-;-;-;-;2
+"... 058.1 Trans ment e comport devid uso álcool";-;-;-;-;-;-;-;-;-;1;1;-;-;-;-;-;2
+"060-063 DOENÇAS DO SISTEMA NERVOSO";-;-;-;-;-;-;1;-;-;-;-;1;-;-;2;5;9
+". 061 Doença de Alzheimer";-;-;-;-;-;-;-;-;-;-;-;1;-;-;2;3;6
+". 063 Restante das doenças do sistema nervoso";-;-;-;-;-;-;1;-;-;-;-;-;-;-;-;2;3
+"066-072 DOENÇAS DO APARELHO CIRCULATÓRIO";-;-;-;-;-;-;1;2;1;3;2;3;4;10;8;31;65
+". 066 Febre reumát aguda e doen reum crôn coração";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 067 Doenças hipertensivas";-;-;-;-;-;-;-;-;-;-;-;2;-;4;3;15;24
+". 068 Doenças isquêmicas do coração";-;-;-;-;-;-;1;2;1;3;1;-;1;4;4;8;25
+"... 068.1 Infarto agudo do miocárdio";-;-;-;-;-;-;1;2;-;2;1;-;1;4;4;5;20
+". 069 Outras doenças cardíacas";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;3;4
+". 070 Doenças cerebrovasculares";-;-;-;-;-;-;-;-;-;-;-;1;1;2;1;3;8
+". 072 Rest doenças do aparelho circulatório";-;-;-;-;-;-;-;-;-;-;1;-;-;-;-;2;3
+"073-077 DOENÇAS DO APARELHO RESPIRATÓRIO";-;-;-;-;-;-;-;-;-;-;1;1;2;1;5;10;20
+". 074 Pneumonia";-;-;-;-;-;-;-;-;-;-;-;-;2;1;2;8;13
+". 076 Doenças crônicas das vias aéreas inferiores";-;-;-;-;-;-;-;-;-;-;1;-;-;-;1;2;4
+". 077 Restante  doenças do aparelho respiratório";-;-;-;-;-;-;-;-;-;-;-;1;-;-;2;-;3
+"078-082 DOENÇAS DO APARELHO DIGESTIVO";-;-;-;-;-;-;-;-;-;1;1;2;1;2;1;3;11
+". 080 Doenças do fígado";-;-;-;-;-;-;-;-;-;-;1;2;1;-;-;-;4
+"... 080.1 Doença alcoólica do fígado";-;-;-;-;-;-;-;-;-;-;1;2;-;-;-;-;3
+"... 080.2 Fibrose e cirrose do fígado";-;-;-;-;-;-;-;-;-;-;-;-;1;-;-;-;1
+". 082 Rest doenças do aparelho digestivo";-;-;-;-;-;-;-;-;-;1;-;-;-;2;1;3;7
+"083 DOENÇAS DA PELE E TECIDO SUBCUTÂNEO";-;-;-;-;-;-;-;-;-;-;-;-;-;1;-;2;3
+"085-087 DOENÇAS DO APARELHO GENITURINÁRIO";-;-;-;-;-;-;1;-;-;-;1;-;1;1;1;2;7
+". 085 D glomerulares e d renais túbulo-interstic";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 086 Insuficiência renal";-;-;-;-;-;-;-;-;-;-;-;-;1;1;-;1;3
+". 087 Rest doenças do aparelho geniturinário";-;-;-;-;-;-;1;-;-;-;1;-;-;-;1;-;3
+"093-097 ALG AFECÇÕES ORIGIN NO PERÍODO PERINATAL";1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+". 096 Trans resp e cardiovas espec per perinatal";1;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1
+"101-103 SINT, SIN E ACH ANORM CLÍN E LAB, NCOP";-;-;-;-;-;-;-;-;-;-;1;-;1;1;-;-;3
+". 103 Rest sint, sin e ach anorm clín e laborat";-;-;-;-;-;-;-;-;-;-;1;-;1;1;-;-;3
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";-;1;1;2;-;3;-;-;-;1;-;2;1;1;-;3;15
+". 104 Acidentes de transporte";-;-;-;-;-;-;-;-;-;1;-;1;-;-;-;-;2
+". 105 Quedas";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;2;2
+". 106 Afogamento e submersões acidentais";-;-;-;1;-;-;-;-;-;-;-;-;-;1;-;-;2
+". 109 Lesões autoprovocadas voluntariamente";-;-;-;-;-;1;-;-;-;-;-;-;-;-;-;-;1
+". 110 Agressões";-;-;1;1;-;2;-;-;-;-;-;-;-;-;-;-;4
+". 111 Eventos(fatos) cuja intenção é indeterminada";-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;1
+". 113 Todas as outras causas externas";-;1;-;-;-;-;-;-;-;-;-;1;1;-;-;-;3
+"Total";1;1;1;3;1;3;3;7;6;8;17;18;20;28;34;84;235
+ Fonte: MS/SVS/CGIAE - Sistema de Informações sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudança no conteúdo da Declaração de Óbito, com maior detalhamento das informações coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formulários. Para mais detalhes sobre as mudanças ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informações sobre Mortalidade - SIM. Consolidação da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notificação 2017 foram atualizados, com alteração das causas básicas de 2 registros e exclusão de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notificação 2019 foram atualizados, com alteração das causas básicas de 4 registros e exclusão de 1 registro.
+ 
