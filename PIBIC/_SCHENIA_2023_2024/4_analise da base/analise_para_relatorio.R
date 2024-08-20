@@ -42,6 +42,77 @@ percentuais <- dados_filtrados %>%
 # Exibe os resultados
 print(percentuais)
 
+
+# proporção de causas -FEMININO +++++++++++++++++++++++++++++++++++++++++++++++++++
+library(dplyr)
+
+# Filtra os dados para o sexo feminino
+dados_feminino_novo <- base_mortalidade_antesdacorrecao %>%
+  filter(sexo == "F")
+
+# Calcula a proporção para 2018
+proporcao_2018_f <- dados_feminino_novo %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa - CID-BR-10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_feminino_novo %>% filter(ano == 2018) %>% pull(Total)) * 100) 
+
+# Calcula a proporção para 2021
+proporcao_2021_f <- dados_feminino_novo %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa - CID-BR-10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_feminino_novo %>% filter(ano == 2021) %>% pull(Total)) * 100) 
+
+# Junta as proporções
+tabela_proporcoes_f <- left_join(proporcao_2018_f, proporcao_2021_f, by = "Causa")
+
+# Agrupa causas com menos de 4%, exceto "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE"
+tabela_proporcoes_agrupada_f <- tabela_proporcoes_f %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4 | Causa == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes_f %>%
+                                          filter(proporcao_2018 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes_f %>%
+                                          filter(proporcao_2021 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+tabela_proporcoes_agrupada_f # Exibe a tabela final
+
+
+
+# proporção de causas - MASCULINO +++++++++++++++++++++++++++++++++++++++++++++++++++
+library(dplyr)
+# Filtra os dados para o sexo masculino
+dados_masculino_novo <- base_mortalidade_antesdacorrecao %>%filter(sexo == "M")
+# Calcula a proporção para 2018
+proporcao_2018_m <- dados_masculino_novo %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa - CID-BR-10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_masculino_novo %>% filter(ano == 2018) %>% pull(Total)) * 100) 
+
+# Calcula a proporção para 2021
+proporcao_2021_m <- dados_masculino_novo %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa - CID-BR-10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_masculino_novo %>% filter(ano == 2021) %>% pull(Total)) * 100) 
+# Junta as proporções
+tabela_proporcoes_m <- left_join(proporcao_2018_m, proporcao_2021_m, by = "Causa")
+# Agrupa causas com menos de 4%, exceto "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE"
+tabela_proporcoes_agrupada_m <- tabela_proporcoes_m %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4 | Causa == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes_m %>%
+                                          filter(proporcao_2018 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes_m %>%
+                                          filter(proporcao_2021 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+tabela_proporcoes_agrupada_m # Exibe a tabela final
+
+
+
+
 # Gráfico com as proporções de CMD - FEMININO ++++++++++++++++++++++++++++++++++++
 # Carregar o pacote ggplot2 e RColorBrewer
 library(ggplot2)
@@ -59,7 +130,7 @@ ggplot(percentuais %>% filter(sexo == 'F'), aes(x = tipologia, y = percentual, f
             hjust = 0.5) +
   labs(x = "Tipologia",
        y = NULL,  # Remove o título do eixo y
-       fill = "Ano") +
+       fill = "") +
   scale_fill_manual(values = cores_azul) +  # Aplicar as cores personalizadas
   theme_minimal() +
   theme(panel.background = element_rect(fill = "white", color = NA),  # Fundo branco e sem borda
@@ -90,7 +161,7 @@ ggplot(percentuais %>% filter(sexo == 'M'), aes(x = tipologia, y = percentual, f
             hjust = 0.5) +
   labs(x = "Tipologia",
        y = NULL,  # Remove o título do eixo y
-       fill = "Ano") +
+       fill = "") +
   scale_fill_manual(values = cores_azul) +  # Aplicar as cores personalizadas
   theme_minimal() +
   theme(panel.background = element_rect(fill = "white", color = NA),  # Fundo branco e sem borda
@@ -105,8 +176,87 @@ ggplot(percentuais %>% filter(sexo == 'M'), aes(x = tipologia, y = percentual, f
 
 # Proporções das principais causas bem definidas ------------------------------
 
+
+# base completa e corrigida: 
 base_corrigida_mortalidade_trienio_2018_2021 <- read.csv("~/Mortalidade_no_semiarido/PIBIC/_SCHENIA_2023_2024/4_analise da base/base_corrigida_mortalidade_trienio_2018_2021.csv")
 View(base_corrigida_mortalidade_trienio_2018_2021)
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# tabela de Proporção dos Grupos de Causas para o Sexo Feminino no Semiárido +++++++++
+library(dplyr)
+
+# Filtra os dados para o sexo feminino
+dados_feminino <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "F")
+
+# Calcula a proporção para 2018
+proporcao_2018 <- dados_feminino %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_feminino %>% filter(ano == 2018) %>% pull(Total)) * 100) 
+
+# Calcula a proporção para 2021
+proporcao_2021 <- dados_feminino %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_feminino %>% filter(ano == 2021) %>% pull(Total)) * 100) 
+
+# Junta as proporções
+tabela_proporcoes <- left_join(proporcao_2018, proporcao_2021, by = "Causa")
+
+# Agrupa causas com menos de 4%, exceto "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE"
+tabela_proporcoes_agrupada <- tabela_proporcoes %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4 | Causa == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2018 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2021 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+
+# Exibe a tabela final
+tabela_proporcoes_agrupada
+
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# tabela de Proporção dos Grupos de Causas para o Sexo Masculino no Semiárido +++++++++
+library(dplyr)
+
+# Filtra os dados para o sexo masculino
+dados_masculino <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "M")
+
+# Calcula a proporção para 2018
+proporcao_2018_m <- dados_masculino %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_masculino %>% filter(ano == 2018) %>% pull(Total)) * 100) 
+# Calcula a proporção para 2021
+proporcao_2021_m <- dados_masculino %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_masculino %>% filter(ano == 2021) %>% pull(Total)) * 100) 
+# Junta as proporções
+tabela_proporcoes_m <- left_join(proporcao_2018_m, proporcao_2021_m, by = "Causa")
+
+# Agrupa causas com menos de 4%, exceto "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE"
+tabela_proporcoes_agrupada_m <- tabela_proporcoes_m %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4 | Causa == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes_m %>%
+                                          filter(proporcao_2018 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes_m %>%
+                                          filter(proporcao_2021 < 4 & Causa != "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE") %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+# Exibe a tabela final
+tabela_proporcoes_agrupada_m
+
 
 
 # Analise condição de vida ----------------------------------------------------
