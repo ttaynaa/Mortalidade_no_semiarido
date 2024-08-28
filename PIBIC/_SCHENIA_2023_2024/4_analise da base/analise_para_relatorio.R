@@ -220,9 +220,115 @@ tabela_proporcoes_agrupada <- tabela_proporcoes %>%
 # Exibe a tabela final
 tabela_proporcoes_agrupada
 
+# retirando a proporção de causas externas*********************************
+library(dplyr)
+
+# Filtra os dados para o sexo feminino
+dados_feminino <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "F") %>%
+  mutate(Total = ifelse(`Causa...CID.BR.10` == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE", 0, Total))
+# Calcula a proporção para 2018
+proporcao_2018 <- dados_feminino %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_feminino %>% filter(ano == 2018) %>% pull(Total)) * 100)
+# Calcula a proporção para 2021
+proporcao_2021 <- dados_feminino %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_feminino %>% filter(ano == 2021) %>% pull(Total)) * 100)
+tabela_proporcoes <- left_join(proporcao_2018, proporcao_2021, by = "Causa") # Junta as proporções
+# Agrupa causas com menos de 4%
+tabela_proporcoes_agrupada_f_semcausaexterna <- tabela_proporcoes %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4) %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2018 < 4) %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2021 < 4) %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+
+# Exibe a tabela final
+tabela_proporcoes_agrupada_f_semcausaexterna
 
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# grafico de linha com os percentuais de causas externas - masculino ***************
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(RColorBrewer)
+library(stringr)
+
+# Filtra os dados para o sexo masculino e para as Causas Externas
+dados_masculino_externas <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "F" & `Causa...CID.BR.10` == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE")
+
+# Transforma os dados para long format
+dados_long <- dados_masculino_externas %>%
+  select(ano, starts_with("X")) %>%
+  pivot_longer(cols = starts_with("X"), names_to = "faixa_etaria", values_to = "mortalidade") %>%
+  mutate(faixa_etaria = recode(faixa_etaria,
+                               `X.1` = "0 a 1 anos",
+                               `X1.a.4.anos` = "1 a 4 anos",
+                               `X5.a.9.anos` = "5 a 9 anos",
+                               `X10.a.14.anos` = "10 a 14 anos",
+                               `X15.a.19.anos` = "15 a 19 anos",
+                               `X20.a.24.anos` = "20 a 24 anos",
+                               `X25.a.29.anos` = "25 a 29 anos",
+                               `X30.a.34.anos` = "30 a 34 anos",
+                               `X35.a.39.anos` = "35 a 39 anos",
+                               `X40.a.44.anos` = "40 a 44 anos",
+                               `X45.a.49.anos` = "45 a 49 anos",
+                               `X50.a.54.anos` = "50 a 54 anos",
+                               `X55.a.59.anos` = "55 a 59 anos",
+                               `X60.a.64.anos` = "60 a 64 anos",
+                               `X65.a.69.anos` = "65 a 69 anos",
+                               `X70.a.74.anos` = "70 a 74 anos",
+                               `X75.a.79.anos` = "75 a 79 anos",
+                               `X80.anos.e.mais` = "80 anos e mais")) %>%
+  group_by(ano, faixa_etaria) %>%
+  summarise(mortalidade = sum(mortalidade), .groups = "drop") %>%
+  group_by(ano) %>%
+  mutate(total_ano = sum(mortalidade)) %>%
+  ungroup() %>%
+  mutate(porcentagem = (mortalidade / total_ano) * 100) %>%
+  mutate(faixa_etaria = str_replace(faixa_etaria, " anos", "")) # Remove o texto " anos"
+# Define a ordem das faixas etárias
+ordem_idades <- c("0 a 1", "1 a 4", "5 a 9", "10 a 14", "15 a 19",
+                  "20 a 24", "25 a 29", "30 a 34", "35 a 39",
+                  "40 a 44", "45 a 49", "50 a 54", "55 a 59",
+                  "60 a 64", "65 a 69", "70 a 74", "75 a 79", 
+                  "80 e mais")
+
+# Converte a coluna faixa_etaria em um fator com a ordem definida
+dados_long <- dados_long %>%
+  mutate(faixa_etaria = factor(faixa_etaria, levels = ordem_idades))
+
+# Definir a paleta de cores azul
+cores_amarelo <- brewer.pal(n = 3, name = "YlOrBr")  # Paleta de azul do RColorBrewer
+# Cria o gráfico de linha com paleta de cores 'Blues' e sem títulos nos eixos
+ggplot(dados_long, aes(x = faixa_etaria, y = porcentagem, color = as.factor(ano), group = ano)) +
+  geom_line(size = 1)  +
+  geom_point() +
+  scale_color_manual(values = c(cores_amarelo[2], cores_amarelo[3])) +
+  scale_y_continuous(
+    breaks = seq(0, max(dados_long$porcentagem, na.rm = TRUE), by = 2),
+    labels = scales::percent_format(scale = 1)
+  ) +  
+  labs(
+    title = NULL,
+    x = NULL,
+    y = NULL,
+    color = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) # Ajusta a leitura das faixas etárias
+
+
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # tabela de Proporção dos Grupos de Causas para o Sexo Masculino no Semiárido +++++++++
 library(dplyr)
 
@@ -257,8 +363,115 @@ tabela_proporcoes_agrupada_m <- tabela_proporcoes_m %>%
 # Exibe a tabela final
 tabela_proporcoes_agrupada_m
 
+# retirando a causa externa ****************************************************
+library(dplyr)
+
+# Filtra os dados para o sexo masculino e ajusta o valor de óbito da causa externa para zero
+dados_masculino <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "M") %>%
+  mutate(Total = ifelse(`Causa...CID.BR.10` == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE", 0, Total))
+
+# Calcula a proporção para 2018
+proporcao_2018 <- dados_masculino %>%
+  filter(ano == 2018) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2018 = sum(Total) / sum(dados_masculino %>% filter(ano == 2018) %>% pull(Total)) * 100)
+# Calcula a proporção para 2021
+proporcao_2021 <- dados_masculino %>%
+  filter(ano == 2021) %>%
+  group_by(Causa = `Causa...CID.BR.10`) %>%
+  summarise(proporcao_2021 = sum(Total) / sum(dados_masculino %>% filter(ano == 2021) %>% pull(Total)) * 100)
+tabela_proporcoes <- left_join(proporcao_2018, proporcao_2021, by = "Causa") # Junta as proporções
+# Agrupa causas com menos de 4%
+tabela_proporcoes_agrupada_m_semcausaexterna <- tabela_proporcoes %>%
+  filter(proporcao_2018 >= 4 | proporcao_2021 >= 4) %>%
+  bind_rows(tibble(Causa = "Outros",
+                   proporcao_2018 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2018 < 4) %>%
+                                          pull(proporcao_2018)),
+                   proporcao_2021 = sum(tabela_proporcoes %>%
+                                          filter(proporcao_2021 < 4) %>%
+                                          pull(proporcao_2021)))) %>%
+  arrange(Causa)  # Ordena por ordem alfabética
+tabela_proporcoes_agrupada_m_semcausaexterna # Exibe a tabela final
 
 
+# grafico de linha com os percentuais de causas externas - masculino ***************
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(RColorBrewer)
+library(stringr)
+
+# Filtra os dados para o sexo masculino e para as Causas Externas
+dados_masculino_externas <- base_corrigida_mortalidade_trienio_2018_2021 %>%
+  filter(sexo == "M" & `Causa...CID.BR.10` == "104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE")
+
+# Transforma os dados para long format
+dados_long <- dados_masculino_externas %>%
+  select(ano, starts_with("X")) %>%
+  pivot_longer(cols = starts_with("X"), names_to = "faixa_etaria", values_to = "mortalidade") %>%
+  mutate(faixa_etaria = recode(faixa_etaria,
+                               `X.1` = "0 a 1 anos",
+                               `X1.a.4.anos` = "1 a 4 anos",
+                               `X5.a.9.anos` = "5 a 9 anos",
+                               `X10.a.14.anos` = "10 a 14 anos",
+                               `X15.a.19.anos` = "15 a 19 anos",
+                               `X20.a.24.anos` = "20 a 24 anos",
+                               `X25.a.29.anos` = "25 a 29 anos",
+                               `X30.a.34.anos` = "30 a 34 anos",
+                               `X35.a.39.anos` = "35 a 39 anos",
+                               `X40.a.44.anos` = "40 a 44 anos",
+                               `X45.a.49.anos` = "45 a 49 anos",
+                               `X50.a.54.anos` = "50 a 54 anos",
+                               `X55.a.59.anos` = "55 a 59 anos",
+                               `X60.a.64.anos` = "60 a 64 anos",
+                               `X65.a.69.anos` = "65 a 69 anos",
+                               `X70.a.74.anos` = "70 a 74 anos",
+                               `X75.a.79.anos` = "75 a 79 anos",
+                               `X80.anos.e.mais` = "80 anos e mais")) %>%
+  group_by(ano, faixa_etaria) %>%
+  summarise(mortalidade = sum(mortalidade), .groups = "drop") %>%
+  group_by(ano) %>%
+  mutate(total_ano = sum(mortalidade)) %>%
+  ungroup() %>%
+  mutate(porcentagem = (mortalidade / total_ano) * 100) %>%
+  mutate(faixa_etaria = str_replace(faixa_etaria, " anos", "")) # Remove o texto " anos"
+
+# Define a ordem das faixas etárias
+ordem_idades <- c("0 a 1", "1 a 4", "5 a 9", "10 a 14", "15 a 19",
+                  "20 a 24", "25 a 29", "30 a 34", "35 a 39",
+                  "40 a 44", "45 a 49", "50 a 54", "55 a 59",
+                  "60 a 64", "65 a 69", "70 a 74", "75 a 79", 
+                  "80 e mais")
+
+# Converte a coluna faixa_etaria em um fator com a ordem definida
+dados_long <- dados_long %>%
+  mutate(faixa_etaria = factor(faixa_etaria, levels = ordem_idades))
+
+# Definir a paleta de cores azul
+cores_azul <- brewer.pal(n = 3, name = "Blues")  # Paleta de azul do RColorBrewer
+
+
+# Cria o gráfico de linha com paleta de cores 'Blues' e sem títulos nos eixos
+ggplot(dados_long, aes(x = faixa_etaria, y = porcentagem, color = as.factor(ano), group = ano)) +
+  geom_line(size = 1)  +
+  geom_point() +
+  scale_color_manual(values = c(cores_azul[2], cores_azul[3])) +
+  scale_y_continuous(
+    breaks = seq(0, max(dados_long$porcentagem, na.rm = TRUE), by = 2),
+    labels = scales::percent_format(scale = 1)
+  ) +  
+  labs(
+    title = NULL,
+    x = NULL,
+    y = NULL,
+    color = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) # Ajusta a leitura das faixas etárias
+
+#
 # Analise condição de vida ----------------------------------------------------
 
 library(readr)
