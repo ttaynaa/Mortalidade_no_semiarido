@@ -478,20 +478,75 @@ library(readr)
 
 condicao_vida <- read.csv("~/Mortalidade_no_semiarido/PIBIC/_SCHENIA_2023_2024/4_analise da base/basecompletacondição_de_vida_semiarido_2022.csv")
 colnames(condicao_vida)
-
+View(condicao_vida)
 # Ajustar o modelo de regressão
-modelo <- lm(taxa_bruta_mortalidade ~ taxa_analfabetismo + rede_de_esgoto , data = condicao_vida)
+modelo <- lm(taxa_bruta_mortalidade ~ taxa_analfabetismo + rede_de_esgoto +
+             tx_banheiro + tx_coleta_lixo + 
+               tx_rede_agua, data = condicao_vida)
 
 # Exibir o resumo do modelo
 summary(modelo)
 
 
+# Carregar o pacote ggplot2
+library(ggplot2)
+
+# Criar o gráfico de dispersão
+ggplot(condicao_vida, aes(x = rede_de_esgoto, y = taxa_bruta_mortalidade, color = Tipo)) +
+  geom_point() +                         # Adicionar pontos
+  labs(
+    x = "Rede de Esgoto",
+    y = "Taxa Bruta de Mortalidade",
+    color = "Tipo"
+  ) +
+  theme_minimal()   
+
+
+# Criar o gráfico de dispersão
+ggplot(condicao_vida, aes(x = tx_banheiro, y = taxa_bruta_mortalidade)) +
+  geom_point() +                         # Adicionar pontos
+  labs(
+    x = "Rede de Esgoto",
+    y = "Taxa Bruta de Mortalidade"
+  ) +
+  theme_minimal()   
 
 
 
+# Carregar os pacotes necessários
+library(ggplot2)
+library(dplyr)
 
+# Substituir os nomes das tipologias
+condicao_vida <- condicao_vida %>%
+  mutate(Tipo = recode(Tipo,
+                       "IntermediarioAdjacente" = "Intermediário Adjacente",
+                       "IntermediarioRemoto" = "Intermediário Remoto",
+                       "RuralAdjacente" = "Rural Adjacente",
+                       "RuralRemoto" = "Rural Remoto",
+                       "Urbano" = "Urbano"))
 
+# Carregar os pacotes necessários
+library(ggplot2)
+library(RColorBrewer)
 
+# Criar uma paleta personalizada com 5 cores da paleta "YlGnBu"
+ylgnbu_palette <- brewer.pal(9, "Blues")[4:8]
+
+# Criar o gráfico de dispersão
+ggplot(condicao_vida, aes(x = rede_de_esgoto, y = taxa_bruta_mortalidade, color = Tipo)) +
+  geom_point() +  # Adicionar pontos
+  labs(
+    x = "Proporção de domicílios com rede de esgoto",
+    y = "Taxa bruta de mortalidade",
+    color = "Tipologia"
+  ) +
+  facet_wrap(~ Tipo, nrow = 1) +  # Colocar os gráficos lado a lado
+  scale_color_manual(values = ylgnbu_palette) +  # Aplicar a paleta "YlGnBu"
+  theme_minimal() +
+  theme(
+    legend.position = "bottom"  # Mover a legenda para baixo do eixo x
+  )
 
 
 
